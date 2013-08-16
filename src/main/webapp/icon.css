@@ -1,0 +1,220 @@
+
+.icon-nav {
+	background-image: url(images/icon/nav.png) !important;
+}
+
+.icon-tree {
+	background-image: url(images/icon/tree.png) !important;
+	white-space: nowrap;
+}
+
+.icon-activity {
+	background-image: url(images/icon/activity.png) !important;
+}
+
+.icon-hr {
+	background-image: url(images/icon/hr.png) !important;
+}
+
+.icon-system {
+	background-image: url(images/icon/system.png) !important;
+}
+
+.icon-user {
+	background-image: url(images/icon/man.gif) !important;
+}
+.icon-file {
+	background-image: url(images/icon/download-file.png) !important;
+}
+
+.icon-add {
+	background-image: url(images/icon/add.png) !important;
+}
+.icon-del {
+	background-image: url(images/icon/delete.png) !important;
+}
+
+.icon-add-p {
+	background-image: url(images/icon/add_p.png) !important;
+}
+.icon-del-p {
+	background-image: url(images/icon/delete_p.png) !important;
+}
+
+.icon-edit {
+	background-image: url(images/icon/edit.png) !important;
+}
+
+.icon-refresh {
+	background-image: url(images/icon/refresh.gif) !important;
+}
+
+.icon-grid-list {
+	background-image:url(images/icon/grid_list.png) !important;
+}
+
+.icon-search-form{
+	background-image: url(images/icon/search_form.png) !important;
+}
+.icon-form{
+	background-image: url(images/icon/form.png) !important;
+}
+.icon-search {
+	background-image: url(images/icon/search.png) !important;
+}
+.icon-save {
+	background-image: url(images/icon/save.png) !important;
+}
+.icon-reset{
+	background-image:url(images/icon/reset.png) !important;
+}
+.icon-chart {
+	background-image: url(images/icon/chart.gif) !important;
+}
+
+.icon-upload {
+	background-image: url(images/icon/adminFile/upload-file.png) !important;
+}
+
+.icon-unupload {
+	background-image: url(images/icon/del-file.png) !important;
+}
+
+.icon-download {
+	background-image: url(images/icon/download-file.png) !important;
+}
+
+.icon-word {
+	background-image: url(images/icon/word.png) !important;
+}
+
+.icon-pdf {
+	background-image: url(images/icon/pdf.png) !important;
+}
+
+.icon-excel {
+	background-image: url(images/icon/excel.png) !important;
+}
+.icon-info {
+	background-image: url(images/icon/info.gif) !important;
+}
+.icon-logout {
+	background-image: url(images/icon/logout.png) !important;
+}
+.icon-style {
+	background-image: url(images/icon/style.png) !important;
+}
+.icon-person-info {
+	background-image: url(images/icon/person_info.png) !important;
+}
+.icon-person-info-edit{
+	background-image: url(images/icon/person_info_edit.png) !important;
+}
+.icon-key-edit{
+	background-image: url(images/icon/key_edit.png) !important;
+}
+.icon-version{
+	background-image: url(images/icon/version.png) !important;
+}
+.icon-docs{
+	background-image: url(images/icon/docs.gif) !important;
+}
+.icon-help{
+	background-image: url(images/icon/help.png) !important;
+}
+.icon-layout{
+	background-image: url(images/icon/layout.png) !important;
+}
+.icon-grant{
+	background-image: url(images/icon/grant.png) !important;
+}
+
+.icon-collapse-all{
+	background-image: url(images/icon/collapse-all.gif) !important;
+}
+
+.icon-expand-all{
+	background-image: url(images/icon/expand-all.gif) !important;
+}
+
+.icon-load-r{
+	background-image: url(images/icon/load_r.png) !important;
+}
+
+.icon-yes{
+	background-image: url(images/icon/yes.png) !important;
+}
+
+.icon-no{
+	background-image: url(images/icon/no.png) !important;
+}
+
+.icon-ok{
+	background-image: url(images/icon/ok.png) !important;
+}
+
+.icon-cancel{
+	background-image: url(images/icon/cancel.png) !important;
+}
+.icon-tip{
+	background-image: url(images/icon/tip.png) !important;
+}
+
+.icon-logout{
+	background-image: url(images/icon/logout.png) !important;
+}
+.icon-sys-config{
+	background-image: url(images/icon/sys_config.png) !important;
+}
+.icon-status-away{
+	background-image: url(images/icon/status_away.png) !important;
+}
+.icon-status-busy{
+	background-image: url(images/icon/status_busy.png) !important;
+}
+.icon-status-offline{
+	background-image: url(images/icon/status_offline.png) !important;
+}
+.icon-status-online{
+	background-image: url(images/icon/status_online.png) !important;
+}
+.icon-user-info{
+	background-image: url(images/icon/user_info.png) !important;
+}
+.icon-email{
+	background-image: url(images/icon/email.png) !important;
+}
+.icon-email-list{
+	background-image: url(images/icon/email_list.png) !important;
+}
+.icon-im{
+	background-image: url(images/icon/im.png) !important;
+}
+.icon-note{
+	background-image: url(images/icon/note.png) !important;
+}
+.icon-link{
+	background-image: url(images/icon/link.png) !important;
+}
+.icon-notice{
+	background-image: url(images/icon/notice.png) !important;
+}
+.icon-news{
+	background-image: url(images/icon/news.png) !important;
+}
+.icon-user-set{
+	background-image: url(images/icon/user_set.png) !important;
+}
+.icon-accordion{
+	background-image: url(images/icon/accordion.gif) !important;
+}
+
+.icon-workflow{
+	background-image: url(images/icon/workflow.png) !important;
+}
+
+
+.x-message-box .icon-saving {
+    background:transparent url(images/icon/download.gif) no-repeat bottom left;
+    height:46px;
+}
