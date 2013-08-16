@@ -16,27 +16,24 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-
 import com.avicit.bis.system.simple.service.SimpleService;
 import com.avicit.framework.context.spring.SpringContextBeanFactory;
-import com.avicit.framework.support.matchrule.context.HibernateMatchRuleContext;
-import com.avicit.framework.support.matchrule.context.HibernateMatchRuleFactory;
 
 @Controller
 public class SimpleController {
 
 	protected static final Log logger = LogFactory.getLog(SimpleController.class);
-	
+
 	@Autowired
 	protected SimpleService simpleService;
 
 	@RequestMapping(value = "/index", method = RequestMethod.GET)
-	public String index(HttpServletRequest request, HttpServletResponse response)
-			throws Exception {
-	    HibernateMatchRuleFactory factory = HibernateMatchRuleContext.getMatchRuleFactory();
+	public String index(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		// HibernateMatchRuleFactory factory =
+		// HibernateMatchRuleContext.getMatchRuleFactory();
 		return "index";
 	}
- 
+
 	@RequestMapping(value = "/spring-application-browser", method = RequestMethod.GET)
 	public ModelAndView browserSpringApplication(HttpServletRequest request, HttpServletResponse response) {
 		Map<String, BeanDefinition> map = SpringContextBeanFactory.getApplicationBeanDefinitions();
@@ -46,14 +43,15 @@ public class SimpleController {
 	}
 
 	@RequestMapping(value = "/spring-dispatcher-browser", method = RequestMethod.GET)
-	public Model browserSpringDispatcher(HttpServletRequest request, HttpServletResponse response,Model model) {
+	public Model browserSpringDispatcher(HttpServletRequest request, HttpServletResponse response, Model model) {
 		Map<String, BeanDefinition> map = SpringContextBeanFactory.getDispatcherBeanDefinitions();
 		model.addAttribute("beanMap", map);
 		return model;
 	}
-	
-	@RequestMapping(value = "/spring-bean-properties",method = RequestMethod.GET)
-	public Model browserBeanProperties(@RequestParam("beanName") String beanName,HttpServletRequest request, HttpServletResponse response,Model model){
+
+	@RequestMapping(value = "/spring-bean-properties", method = RequestMethod.GET)
+	public Model browserBeanProperties(@RequestParam("beanName") String beanName, HttpServletRequest request,
+			HttpServletResponse response, Model model) {
 		Object bean = SpringContextBeanFactory.getBean(beanName);
 		logger.debug(bean);
 		model.addAttribute("bean", bean);

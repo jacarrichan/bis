@@ -7,9 +7,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import com.avicit.framework.support.entity.BaseEntity;
-import com.avicit.framework.support.matchrule.HQLParameter;
-import com.avicit.framework.support.matchrule.annotation.MatchRule;
-import com.avicit.framework.support.matchrule.annotation.Rule;
 
 @Entity
 @Table(name="SYS_DATA")
@@ -19,8 +16,6 @@ public class Data extends BaseEntity{
 
 	private Integer id;
 	
-	@MatchRule({@Rule(name="code",type=HQLParameter.Type.LESSTHAN),
-				@Rule(name="data_code")})
 	private String code;
 	
 	private String text;

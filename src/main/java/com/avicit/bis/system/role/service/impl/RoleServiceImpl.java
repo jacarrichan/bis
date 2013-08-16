@@ -5,12 +5,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
 import com.avicit.bis.system.role.dao.RoleDao;
 import com.avicit.bis.system.role.entity.Role;
 import com.avicit.bis.system.role.service.RoleService;
 import com.avicit.bis.system.role.vo.RoleVo;
-import com.avicit.framework.support.matchrule.HQLParameter;
 import com.avicit.framework.util.ListUtils;
 
 @Service("roleServiceImpl")
@@ -20,8 +18,8 @@ public class RoleServiceImpl implements RoleService {
 	private RoleDao<Role, Integer> roleDao;
 
 	public List<RoleVo> list() {
-		HQLParameter p = new HQLParameter(Role.class);
-		System.out.println(p);
+//		HQLParameter p = new HQLParameter(Role.class);
+//		System.out.println(p);
 		return ListUtils.transform(roleDao.findPageByHql(" from Role "),
 				RoleVo.class);
 	}

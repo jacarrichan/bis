@@ -15,12 +15,9 @@ import javax.persistence.Table;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
-
 import com.avicit.bis.system.resource.entity.Resource;
 import com.avicit.bis.system.user.entity.User;
 import com.avicit.framework.support.entity.BaseEntity;
-import com.avicit.framework.support.matchrule.annotation.MatchRule;
-import com.avicit.framework.support.matchrule.annotation.Rule;
 
 
 @Entity
@@ -32,7 +29,6 @@ public class Role extends BaseEntity{
 	/**
 	 * 角色名称
 	 */
-	@MatchRule({@Rule(name="name")})
 	private String name;
 	/**
 	 * 角色代码
