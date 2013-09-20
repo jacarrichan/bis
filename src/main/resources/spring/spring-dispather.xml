@@ -58,9 +58,26 @@
 
 	<bean id="handlerAdapter"
 		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<ref bean="stringHttpMessageConverter" />
+				<ref bean="jsonHttpMessageConverter" />
+				<ref bean="marshallingHttpMessageConverter" />
+			</list>
+		</property>
 	</bean>
 
-
+	<bean id="stringHttpMessageConverter"
+		class="org.springframework.http.converter.StringHttpMessageConverter" />
+	<bean id="jsonHttpMessageConverter"
+		class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" />
+	<bean id="marshallingHttpMessageConverter"
+		class="org.springframework.http.converter.xml.MarshallingHttpMessageConverter">
+		<constructor-arg ref="jaxbMarshaller" />
+		<property name="supportedMediaTypes" value="application/xml"></property>
+	</bean>
+	<bean id="jaxbMarshaller" class="org.springframework.oxm.xstream.XStreamMarshaller">
+	</bean>
 	<bean
 		class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
 		<property name="mediaTypes">
@@ -74,7 +91,8 @@
 			<list>
 				<bean class="org.springframework.web.servlet.view.BeanNameViewResolver" />
 				<bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
-					<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+					<property name="viewClass"
+						value="org.springframework.web.servlet.view.JstlView" />
 					<property name="prefix" value="/" />
 					<property name="suffix" value=".jsp" />
 				</bean>
